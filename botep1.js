@@ -1,20 +1,13 @@
-function sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds) {
-            break;
-        }
-    }
-}
 
 // Create the configuration
+var nickname = "jotscho"
 var config = {
     channels: ["#root-me_challenge"],
     server: "irc.root-me.org",
     botName: "Johbot"
 };
 
-// Get the lib
+// Get the libs
 var irc = require("irc");
 
 // Create the bot name
@@ -29,7 +22,7 @@ bot.addListener('error', function (message) {
 
 // Listen for any message, PM said user when he posts
 bot.addListener("pm", function (nick, text, message) {
-    if (nick == "jotscho"){
+    if (nick == nickname){
     bot.say("Candy", "!ep1");
     }
 });

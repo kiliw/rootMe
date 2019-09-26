@@ -1,11 +1,13 @@
-// Create the configuration
+// Create the configuratio
+
+var nickname = "jotscho";
 var config = {
     channels: ["#root-me_challenge"],
     server: "irc.root-me.org",
     botName: "Johbot"
 };
 
-// Get the lib
+// Get the libs
 var irc = require("irc");
 var atob = require("atob");
 
@@ -21,7 +23,7 @@ bot.addListener('error', function (message) {
 
 // Listen for any message, PM said user when he posts
 bot.addListener("pm", function (nick, text, message) {
-    if (nick == "jotscho") {
+    if (nick == nickname) {
         bot.say("Candy", "!ep2");
     }
 });
