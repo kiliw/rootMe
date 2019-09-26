@@ -1,0 +1,19 @@
+{
+  "name": "rootme",
+  "version": "1.0.0",
+  "description": "Solutions for root me challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiliw/rootMe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiliw/rootMe/issues"
+  },
+  "homepage": "https://github.com/kiliw/rootMe#readme"
+}
