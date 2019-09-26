@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kiliw/rootMe/issues"
   },
-  "homepage": "https://github.com/kiliw/rootMe#readme"
+  "homepage": "https://github.com/kiliw/rootMe#readme",
+  "dependencies": {
+    "irc": "^0.5.2"
+  }
 }
